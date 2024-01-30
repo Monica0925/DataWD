@@ -1,0 +1,73 @@
+---
+import { Picture } from "astro:assets";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+---
+
+<Layout title="Blog">
+  <Container>
+    <Sectionhead>
+      <span slot="title" >Services</span>
+      <span slot="desc"  style="color: #FF6600;" >
+        We write about building startups and thoughts going on our mind.
+      </span>
+    </Sectionhead>
+    <main class="mt-16">
+      <ul class="grid gap-16 max-w-4xl mx-auto">
+        <!-- Blog Post 1 -->
+        <li>
+          <a href="https://www.jar4u.com/" target="_blank" rel="noopener noreferrer">
+            <div class="grid md:grid-cols-2 gap-5 md:gap-10 items-center">
+              <img src="../../../assets/sayjini_logo.png" alt="Jar4u Logo" class="w-full rounded-md object-cover object-center bg-white">
+              <div>
+                <span class="text-blue-400 uppercase tracking-wider text-sm font-medium">
+                  Sample Category 1
+                </span>
+                <h2 class="text-3xl font-semibold leading-snug tracking-tight mt-1">
+                  Jar4u - Elevating Sales with 3D Experiences
+                </h2>
+              </div>
+            </div>
+          </a>
+        </li>
+        
+        <!-- Blog Post 2 -->
+        <li>
+          <a href="https://www.sayjini.com/" target="_blank" rel="noopener noreferrer">
+            <div class="grid md:grid-cols-2 gap-5 md:gap-10 items-center">
+              <img src="../../assets/jar4u_logo.png" alt="Say Jini logo" class="w-full rounded-md object-cover object-center bg-white">
+              <div>
+                <span class="text-blue-400 uppercase tracking-wider text-sm font-medium">
+                  Sample Category 2
+                </span>
+                <h2 class="text-3xl font-semibold leading-snug tracking-tight mt-1">
+                  Say Jini - Groundbreaking system enabling voice-based shopping and transactions in regional languages.
+                </h2>
+              </div>
+            </div>
+          </a>
+        </li>
+        
+        <!-- Blog Post 3 -->
+        <li>
+          <a href="https://www.datawithd.com/3drooms" target="_blank" rel="noopener noreferrer">
+            <div class="grid md:grid-cols-2 gap-5 md:gap-10 items-center">
+              <img src="../../assets/jar4u_logo.png" alt="3D rooms logo" class="w-full rounded-md object-cover object-center bg-white">
+              <div>
+                <span class="text-blue-400 uppercase tracking-wider text-sm font-medium">
+                  Sample Category 3
+                </span>
+                <h2 class="text-3xl font-semibold leading-snug tracking-tight mt-1">
+                  3D-rooms
+                </h2>
+                
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </main>
+  </Container>
+</Layout>

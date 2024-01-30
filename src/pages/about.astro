@@ -1,0 +1,65 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+---
+<Layout title="Portfolio">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Portfolio</Fragment>
+      <Fragment slot="desc">Explore our latest projects and products.</Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-900">
+        Our Latest Projects
+      </h2>
+      <p class="text-lg leading-relaxed text-gray-700">
+        Discover our portfolio showcasing our diverse range of projects and products.
+      </p>
+      <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
+        <!-- Video 1 -->
+        <div class="group">
+          <div class="w-full aspect-square">
+            <!-- Video component -->
+            <video controls width="500" height="300">
+              <source src="src\assets\jar4u.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="mt-4 text-center">
+            <h2 class="text-lg text-orange-500">Jar4u</h2>
+          </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="group">
+          <div class="w-full aspect-square">
+            <!-- Video component -->
+            <video controls width="500" height="300">
+              <source src="video2.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="mt-4 text-center">
+            <h2 class="text-lg text-gray-900">sayjini</h2>
+          </div>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="group">
+          <div class="w-full aspect-square">
+            <!-- Video component -->
+            <video controls width="500" height="300">
+              <source src="video3.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="mt-4 text-center">
+            <h2 class="text-lg text-orange-500">3D rooms</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Container>
+</Layout>

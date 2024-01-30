@@ -1,0 +1,84 @@
+---
+// @ts-ignore
+import Dropdown from "src\components\navbar\dropdown.astro";
+
+import { Icon } from "astro-icon";
+
+  const features = [
+  {
+    title: "Jar4U",
+    description:
+      "Worlds fastest 3D AI solution for AR generation : instead of 4 weeks, we do it in under 100 mins.",
+    icon: "bx:bxs-briefcase",
+  },
+  {
+    title: "Say Jini",
+    description:
+      "Worlds first Vernacular Voice Commerce platform- capable of serving diverse dialects for a Billion Bhartiya.",
+    icon: "bx:bxs-window-alt",
+  },
+  {
+    title: "3D Rooms",
+    description:
+      "73% travellers prefer experiencing hotel room in 3D before deciding.  ",
+    icon: "bx:bxs-data",
+  }]
+---
+
+<!-- 
+<div class="mt-16 md:mt-0">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    Our Products
+  </h2>
+  <p class="text-lg mt-4 text-slate-600">
+    Astro comes batteries included. It takes the best parts of state-of-the-art
+    tools and adds its own innovations.
+  </p>
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+  {
+    features.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>
+-->
+<div class="mt-16 md:mt-0">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight text-gray-900">
+    Our Products
+  </h2>
+  <p class="text-lg mt-4 text-gray-600">
+  </p>
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+  {
+    features.map((item) => (
+      <div class="bg-gray-100 rounded-lg p-6 shadow-md flex items-start">
+        <div class="bg-orange-500 rounded-full p-3 w-12 h-12 flex items-center justify-center mr-4">
+          <Icon class="text-white text-2xl" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-xl text-gray-900">{item.title}</h3>
+          <p class="text-gray-700 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>
+
+
+
+
+
+
+
